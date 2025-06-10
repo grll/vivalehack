@@ -1,3 +1,5 @@
 .DS_Store
+node_modules
+__pycache__
+dist
 .env
-client_secret_880305968716-9hfslr0mq5o5869bggpvc687561hai99.apps.googleusercontent.com.json
