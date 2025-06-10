@@ -62,7 +62,6 @@ class ConversationManager:
 
         try:
             with trace(workflow_name=self.workflow_name, group_id=group_id):
-                print(f"Last result: {self.last_results[group_id]}")
                 if not self.group_initialized[group_id]:
                     # First turn for this group - use prompt directly
                     result = await Runner.run(self.agent, prompt)
