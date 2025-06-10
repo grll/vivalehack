@@ -13,6 +13,10 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "httpx>=0.25.0"
 ]
+dependencies = [
+    "openai-agents>=0.0.17",
+    "python-dotenv>=1.1.0",
+]
 
 [dependency-groups]
 dev = [
