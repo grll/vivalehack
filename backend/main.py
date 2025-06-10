@@ -9,9 +9,9 @@ from config import settings
 from models import (
     MessageRequest, MessageResponse, HealthResponse, ErrorResponse,
     ChatMessage, ChatHistoryResponse, PaginationParams, ConversationListResponse,
-    LinkedInProfileRequest, LinkedInProfileResponse
+    LinkedInProfileRequest, LinkedInProfileResponse, CompleteUserProfileResponse
 )
-from services import openai_service, chat_storage, linkedin_service, user_storage
+from services import conversation_service, chat_storage, linkedin_service, user_storage
 
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.log_level))
@@ -52,12 +52,6 @@ async def create_message(request: MessageRequest):
         MessageResponse with OpenAI response id and message content
     """
     try:
-        if not openai_service.is_initialized():
-            raise HTTPException(
-                status_code=500, 
-                detail="OpenAI service not initialized. Please check API key configuration."
-            )
-        
         # Generate conversation ID if not provided
         conversation_id = request.id or str(uuid.uuid4())
         
@@ -71,10 +65,10 @@ async def create_message(request: MessageRequest):
         )
         chat_storage.save_message(conversation_id, user_message)
         
-        # Call OpenAI responses service
-        result = await openai_service.create_responses(
+        # Call conversation service
+        result = await conversation_service.create_response(
             message=request.message,
-            conversation_id=request.id  # Use original ID for OpenAI (can be None)
+            conversation_id=conversation_id
         )
         
         # Save assistant response to storage
@@ -86,6 +80,7 @@ async def create_message(request: MessageRequest):
         chat_storage.save_message(conversation_id, assistant_message)
         
         response = MessageResponse(
+            id=conversation_id,
             openai_id=result["response_id"],
             message=result["message"]
         )
@@ -116,14 +111,26 @@ async def scrape_linkedin_profile(request: LinkedInProfileRequest):
     try:
         logger.info(f"Processing LinkedIn profile scraping request for: {request.linkedinUrl}")
         
-        # Call LinkedIn service to scrape profile
+        # Call LinkedIn service to scrape profile (now returns Dict with all data)
         profile_data = await linkedin_service.scrape_profile(request.linkedinUrl)
         
-        # Save profile data to user.json
+        # Save all profile data to user.json
         user_storage.save_profile(request.linkedinUrl, profile_data)
         
-        logger.info(f"LinkedIn profile scraped and saved successfully: {profile_data.firstName} {profile_data.lastName}")
-        return profile_data
+        # Extract firstName and lastName for the response
+        first_name = profile_data.get("firstName", "")
+        last_name = profile_data.get("lastName", "")
+        
+        # Create response object for API compatibility
+        response = LinkedInProfileResponse(
+            firstName=first_name,
+            lastName=last_name
+        )
+        
+        logger.info(f"LinkedIn profile scraped and saved successfully: {first_name} {last_name}")
+        logger.info(f"Total profile fields saved: {len(profile_data)}")
+        
+        return response
         
     except Exception as e:
         logger.error(f"Error scraping LinkedIn profile: {str(e)}")
@@ -207,10 +214,44 @@ async def health_check():
     """Detailed health check endpoint"""
     return HealthResponse(
         status="healthy",
-        openai_client="initialized" if openai_service.is_initialized() else "not_initialized",
+        openai_client="initialized" if conversation_service.is_initialized() else "not_initialized",
         api_key_configured=bool(settings.openai_api_key),
         timestamp=datetime.utcnow()
     )
+
+@app.get("/user-profile", response_model=CompleteUserProfileResponse, responses={404: {"model": ErrorResponse}, 500: {"model": ErrorResponse}})
+async def get_user_profile():
+    """
+    Get the complete user profile data
+    
+    Returns:
+        CompleteUserProfileResponse with all saved user profile information
+    """
+    try:
+        logger.info("Retrieving user profile data")
+        
+        # Get profile data from storage
+        profile_data = user_storage.get_profile()
+        
+        if not profile_data:
+            raise HTTPException(
+                status_code=404,
+                detail="No user profile found. Please scrape a LinkedIn profile first."
+            )
+        
+        logger.info(f"Retrieved user profile with {len(profile_data)} fields")
+        
+        # Return all profile data
+        return CompleteUserProfileResponse(**profile_data)
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error retrieving user profile: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to retrieve user profile: {str(e)}"
+        )
 
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request, exc):

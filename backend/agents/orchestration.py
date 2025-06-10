@@ -41,7 +41,6 @@ main_agent = Agent(
         summarization_agent,
         networking_agent,
     ],
-    input_guardrails=[InputGuardrail(guardrail_function=viva_tech_conference_guardrail)],
 )
 
 
@@ -56,7 +55,9 @@ async def main():
             result = await Runner.run(main_agent, user_input)
             print("\n" + result.final_output)
         except InputGuardrailTripwireTriggered:
-            print("\nI'm sorry, I can only help with VivaTech Conference related questions.")
+            print(
+                "\nI'm sorry, I can only help with VivaTech Conference related questions."
+            )
 
 
 if __name__ == "__main__":

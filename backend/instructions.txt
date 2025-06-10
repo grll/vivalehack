@@ -1,0 +1,1203 @@
+You are an AI assistant for VivaTech 2025.
+You provide clear, friendly, and accurate general information about the event.
+You can answer questions about dates, location, themes, stages, award ceremonies, main topics, networking events,
+and highlight special features such as women in tech, sustainability, AI, and startups.
+Guide users to relevant areas of the program and help them get the most out of their VivaTech experience.
+If a detailed schedule or session content is needed, reference the program file (to be attached).
+Always be welcoming and helpful in your responses.
+
+VivaTech Program
+
+# VivaTech 2025 Program - June 11, 2025
+
+## Dôme de Paris
+
+### Nvidia GTC Paris Keynote
+- Date: June 11, 2025
+- Time: 11:00 AM - 1:00 PM CET
+- Speakers: Jensen Huang (NVIDIA)
+
+### Surprise Coming Soon
+- Date: June 11, 2025
+- Time: 5:00 PM - 6:00 PM CET
+- Speakers: TBA
+
+## Stage One
+
+### Opening Ceremony
+- Date: June 11, 2025
+- Time: 9:20 AM - 9:30 AM CET
+- Speakers: 
+  - Pierre Louette (Groupe Les Echos Le Parisien)
+  - Maurice Lévy (Publicis Groupe)
+
+### Welcoming the 2025 Country of the Year
+- Date: June 11, 2025
+- Time: 9:30 AM - 9:45 AM CET
+
+### Canada: AI's Northern Powerhouse—From Research to Commercialization
+- Date: June 11, 2025
+- Time: 9:45 AM - 10:15 AM CET
+- Speakers:
+  - Amanda Arciero (Airudi)
+  - Julien Billot (Scale AI)
+  - Ryan Monsurate (Farpoint Technologies)
+  - Andréanne Passarelli (Videns)
+
+### Software République
+- Date: June 11, 2025
+- Time: 10:15 AM - 11:00 AM CET
+- Speakers:
+  - Bernard Charlès (Dassault Systèmes)
+  - Luca de Meo (Renault)
+  - Jean-Charles Decaux (JCDecaux)
+  - +3 speakers
+
+### AI Code of Conduct: Building the Rules for a Machine-Powered World
+- Date: June 11, 2025
+- Time: 11:25 AM - 11:50 AM CET
+
+### Driving Change: How the Antoine Alléno Association Is Mobilizing Tech to End Road Violence
+- Date: June 11, 2025
+- Time: 11:50 AM - 12:10 PM CET
+- Speakers: Maurice Lévy (Publicis Groupe)
+
+### The Speed Of Innovation: How Sanofi and McLaren Are Redefining Performance
+- Date: June 11, 2025
+- Time: 12:10 PM - 12:35 PM CET
+- Speakers:
+  - Paul Hudson (Sanofi)
+  - Zak Brown (McLaren Racing)
+
+### Intuition and Imagination in the Age of AI
+- Date: June 11, 2025
+- Time: 12:35 PM - 12:50 PM CET
+- Speakers: Nicolas Hieronimus (L'Oréal Groupe)
+
+### Beyond the Button: Reinventing the Future of Consumer Commerce
+- Date: June 11, 2025
+- Time: 12:50 PM - 1:10 PM CET
+- Speakers:
+  - Maurice Lévy (Publicis Groupe)
+  - Diego Scotti (PayPal)
+
+### Seizing the Agentic AI Advantage
+- Date: June 11, 2025
+- Time: 1:10 PM - 1:30 PM CET
+- Speakers:
+  - Stéphane Bout (McKinsey)
+  - Alex Sukharevsky (McKinsey)
+
+### Navigating the Next Frontier in AI
+- Date: June 11, 2025
+- Time: 1:30 PM - 1:55 PM CET
+- Speakers:
+  - Rohit Prasad (Amazon)
+  - Nicholas Thompson (The Atlantic)
+
+### The Human Algorithm: Leading Work and Talent in the AI Age
+- Date: June 11, 2025
+- Time: 1:55 PM - 2:25 PM CET
+- Speakers:
+  - Maud Alvarez-Pereyre (LVMH)
+  - Jonas Prising (ManpowerGroup)
+
+### The Future of Making, Moving, and Powering: How is AI Reshaping Industrial Operations?
+- Date: June 11, 2025
+- Time: 2:40 PM - 3:10 PM CET
+- Speakers:
+  - Mohamed Kande (PwC)
+  - Cedrik Neike (Siemens)
+  - Jennifer Schenker (The Innovator)
+
+### The Future of AI in Enterprise
+- Date: June 11, 2025
+- Time: 3:10 PM - 3:40 PM CET
+- Speakers: Martin Kon (Cohere)
+
+### From Ads to Armor
+- Date: June 11, 2025
+- Time: 3:40 PM - 4:05 PM CET
+- Speakers:
+  - Nikesh Arora (Palo Alto Networks)
+  - Maurice Lévy (Publicis Groupe)
+
+### A Turning Point for Finance? Examining Tech and the Shifting World Order
+- Date: June 11, 2025
+- Time: 4:05 PM - 4:30 PM CET
+- Speakers:
+  - Philippe Botteri (Accel)
+  - Caroline Connan (Bloomberg)
+  - Lynn Martin (NYSE Group)
+
+### AI Creative Show
+- Date: June 11, 2025
+- Time: 6:00 PM - 8:00 PM CET
+- Speakers:
+  - DeLaurentis (French electro musician, producer and performer)
+  - Anna Apter (Actress, Filmmaker)
+  - Marianne Carpentier (TF1 Group)
+  - +6 speakers
+
+## Blue Stage
+
+### The Intelligent Ally: How is AI Reshaping Medical Practice?
+- Date: June 11, 2025
+- Time: 10:00 AM - 10:45 AM CET
+- Speakers:
+  - Clara Léonard (Doctolib)
+  - Alex Ng (Tencent)
+  - Shez Partovi (Philips)
+  - +2 speakers
+
+### The AI Frontier: A Founder's Vision for Cancer's Future
+- Date: June 11, 2025
+- Time: 10:50 AM - 11:15 AM CET
+- Speakers:
+  - Fanny Jaulin (Orakl Oncology)
+  - Jeremy Uzan (Singular)
+
+### Mind the Gap: Why FemTech Needs More Investment Now
+- Date: June 11, 2025
+- Time: 11:20 AM - 11:55 AM CET
+- Speakers:
+  - Frédérique Dame (Google Ventures)
+  - Marina Gerner (Freelance)
+  - Rhiannon White (Clue)
+
+### Beyond Human Limits: Robotics to Walk and Empower
+- Date: June 11, 2025
+- Time: 12:00 PM - 12:20 PM CET
+- Speakers:
+  - Jean-Louis Constanza (Wandercraft)
+  - Maxime Huerre (Eurazeo)
+
+### Healthcare for All? Balancing Innovation and Equity Using AI
+- Date: June 11, 2025
+- Time: 12:25 PM - 1:00 PM CET
+- Speakers:
+  - Jalil Al-Labadi (Altibbi)
+  - Julie Josse (Inria)
+  - Alex Lebrun (Nabla)
+  - Trent Norris (NVIDIA)
+
+### The New Information Gods: From Fact-Checking to Reality-Checking
+- Date: June 11, 2025
+- Time: 2:00 PM - 2:45 PM CET
+- Speakers:
+  - Steve Rathje (New York University)
+  - Ana Rold (Diplomatic Courier)
+  - Katie Sanders (Politifact)
+  - +2 speakers
+
+### The Price of Truth: Balancing Profit and Purpose in the Digital Era
+- Date: June 11, 2025
+- Time: 2:50 PM - 3:35 PM CET
+- Speakers:
+  - Lane Becker (Wikimedia Foundation)
+  - Charlie Beckett (The London School of Economics and Political Science)
+  - Alex Hardiman (The New York Times)
+  - +2 speakers
+
+### From Words to Action: Exploring the Global Landscape of AI Regulation
+- Date: June 11, 2025
+- Time: 3:40 PM - 4:25 PM CET
+- Speakers:
+  - Amanda Craig (Microsoft)
+  - Angela Huyue Zhang (University of Southern California)
+  - Benjamin Prud'homme (Mila - Quebec Artificial Intelligence Institute)
+  - Anu Talus (European Data Protection Board)
+
+### The Deliberate Algorithm: Choosing AI's Ethical Path
+- Date: June 11, 2025
+- Time: 4:30 PM - 5:15 PM CET
+- Speakers:
+  - Samantha Gloede (KPMG)
+  - Arianna Legovini (The World Bank)
+  - Annu Nieminen (The Upright Project)
+  - Vera Zakem (State of California)
+
+## Black Stage
+
+### Less is More: How Specialized AI Solutions Drive Business Value
+- Date: June 11, 2025
+- Time: 10:00 AM - 10:35 AM CET
+- Speakers:
+  - Stefan Mesken (DeepL)
+  - Ankush Prakash (AWS Corporate Development)
+  - Oliver Smith (Fortune)
+  - Kate Soule (IBM-Granite)
+
+### Workplaces and Organizations: How AI Is Reshaping the Landscape
+- Date: June 11, 2025
+- Time: 10:40 AM - 11:10 AM CET
+- Speakers:
+  - Chadi Hantouche (Wavestone)
+  - Benoit Serre (ADRH)
+
+### So Close No Matter How Far: Digital Nomadism, Remote Work & Global Talent Acquisition
+- Date: June 11, 2025
+- Time: 12:25 PM - 1:00 PM CET
+- Speakers:
+  - Luke Armstrong (WeWork)
+  - Anastasia Pshegodskaya (Remote)
+  - Orianna Rosa Royle (Fortune)
+  - Bianca Zwart (bunq)
+
+### Striking the Right Balance: Founders' Mental Health
+- Date: June 11, 2025
+- Time: 2:00 PM - 2:35 PM CET
+- Speakers: Martin Enault (Centech)
+
+### Founder's Story: Scaling Factorial from 1 to 100M, and becoming a Unicorn
+- Date: June 11, 2025
+- Time: 2:40 PM - 3:15 PM CET
+- Speakers:
+  - Luca Eisenstecken (Atomico)
+  - Jordi Romero (Factorial)
+
+### Navigating Growth in a Shifting Investment Landscape
+- Date: June 11, 2025
+- Time: 3:20 PM - 3:55 PM CET
+- Speakers:
+  - Daphné Leprince-Ringuet (Sifted)
+  - Annu Nieminen (The Upright Project)
+  - Lauriane Requena (KKR)
+
+### Most Recent AI Venture Trends in Silicon Valley
+- Date: June 11, 2025
+- Time: 4:00 PM - 4:15 PM CET
+- Speakers: Ilya Strebulaev (Stanford Business School)
+
+### Exit Backlog: What Alternatives To The Traffic Jams?
+- Date: June 11, 2025
+- Time: 4:20 PM - 4:55 PM CET
+- Speakers:
+  - Jaja Liao (25madison)
+  - Julien-David Nitlech (Iris)
+  - Nalin Patel (Pitchbook)
+  - Henry Zhang (Hermitage Capital)
+
+### Founder's Story: Going Global: Strategies for European Expansion
+- Date: June 11, 2025
+- Time: 5:00 PM - 5:30 PM CET
+- Speakers:
+  - Chris O'Brien (The French Tech Journal)
+  - Valentin Stalf (N26)
+
+## Purple Stage
+
+### How Will Driverless Vehicles Hit the Road?
+- Date: June 11, 2025
+- Time: 10:00 AM - 10:35 AM CET
+- Speakers:
+  - Junwei Bao (Seyond)
+  - Constantin Gall (EY-Parthenon)
+
+### From New Frontiers to Everyday Life: How RATP Dev Delivers Practical Innovation
+- Date: June 11, 2025
+- Time: 11:10 AM - 11:30 AM CET
+- Speakers:
+  - Kristen Davis (CinqC)
+  - Hiba Farès (RATP Dev)
+
+### From the Ground Up: Building Resilient Cities
+- Date: June 11, 2025
+- Time: 11:35 AM - 12:10 PM CET
+- Speakers:
+  - Andrea Fernandez (C40 Cities)
+  - Alice Lucken (PwC)
+  - Sacha Stolp (Department of Engineering, City of Amsterdam)
+
+### How Can Tourism Become More Sustainable?
+- Date: June 11, 2025
+- Time: 12:15 PM - 1:00 PM CET
+- Speakers:
+  - Kristen Davis (CinqC)
+  - Misa Labarile (EU Commission)
+  - Catriona Meehan (Omio Travel)
+  - Ance Švajnzger (Intrepid Travel)
+
+### Transmedia Storytelling: Crafting Narratives Across Multiple Platforms
+- Date: June 11, 2025
+- Time: 2:00 PM - 2:35 PM CET
+- Speakers:
+  - Michael Fan (Galaxy Interactive)
+  - Catherine Martel (Haus of Park)
+  - Daren Tang (World Intellectual Property Organization)
+
+### Capturing Attention in the Age of Algorithms
+- Date: June 11, 2025
+- Time: 3:55 PM - 4:10 PM CET
+- Speakers: Cécile Lejeune (Kantar Insights France)
+
+## Discovery Stage
+
+### Rack Scale and Data Center Scale Solutions (AI Data Center Building Blocks) Powered by NVIDIA Blackwell
+- Date: June 11, 2025
+- Time: 10:30 AM - 11:00 AM CET
+- Speakers:
+  - Jack Hsieh (Supermicro)
+  - Bernhard Schimpl (Nvidia)
+
+### Watch Party - Nvidia GTC Paris Keynote
+- Date: June 11, 2025
+- Time: 11:00 AM - 12:30 PM CET
+- Speakers: Jensen Huang (NVIDIA)
+
+### Live Agent Revolution: Build Your Generative AI Assistant in a Few Minutes
+- Date: June 11, 2025
+- Time: 12:30 PM - 1:00 PM CET
+- Speakers:
+  - James Croasdale (Salesforce)
+  - Paul Medevielle (Salesforce)
+
+### CTRL + Couture: Craftsmanship in the Age of Automation
+- Date: June 11, 2025
+- Time: 2:00 PM - 2:15 PM CET
+- Speakers: Giovanna Graziosi Casimiro (Institut Français de la Mode)
+
+### Live Phygital Catwalk: Interactive Demo of Phygital Fashion and Beauty Products
+- Date: June 11, 2025
+- Time: 2:15 PM - 2:30 PM CET
+- Speakers: Dmytro Kornilov (FFFACE.ME)
+
+### From Sketch to Shelf: Transforming from End-to-End the Entire Visual Pipeline with AI
+- Date: June 11, 2025
+- Time: 2:30 PM - 2:45 PM CET
+- Speakers: Artem Kupriianenko (Generaspace)
+
+### Garments That Fit: How Can We Make Virtual Try-On Truly Accurate and Inclusive?
+- Date: June 11, 2025
+- Time: 2:45 PM - 3:00 PM CET
+- Speakers: Jean Jaulhiac Quesnel (Proportions)
+
+### The Future of Eyewear: Made To Fit, Made To Order, Made In France
+- Date: June 11, 2025
+- Time: 3:05 PM - 3:20 PM CET
+- Speakers:
+  - Sébastien Brusset (Visages)
+  - Elie Kesslassy (Visages)
+  - Marc Zouari (Visages)
+
+### Wear the Vibe: Tech, Touch, Fashion, Emotion
+- Date: June 11, 2025
+- Time: 3:20 PM - 3:35 PM CET
+- Speakers: Francesca Rosella (CuteCircuit)
+
+### Vibe Coding: Brands as Destinations in Gamified Shoppable Worlds
+- Date: June 11, 2025
+- Time: 3:35 PM - 3:50 PM CET
+- Speakers: Evelyn Mora (VLGE)
+
+### At the Crossroads of Tech and Creativity with La French Touch!
+- Date: June 11, 2025
+- Time: 4:30 PM - 5:30 PM CET
+- Speakers:
+  - Marion Carré (Ask Mona)
+  - Bruno De Sa Moreira (Histovery)
+  - Pierre Blaise Dionet (Synegram)
+  - +4 speakers
+
+### From Ideas to Impact: Building the Eco-System for Industrial Digital Innovation
+- Date: June 11, 2025
+- Time: 5:30 PM - 6:00 PM CET
+
+## Exec Arena
+
+### The Future is Fem[AI]le - Using AI to Bridge the Gender Gap at Work - By the Women's Forum
+- Date: June 11, 2025
+- Time: 10:00 AM - 10:30 AM CET
+
+### AI: The CMO Game Changer – From EXCOM Pressure for Growth to Market Impact
+- Date: June 11, 2025
+- Time: 10:30 AM - 11:00 AM CET
+- Speakers: Emmanuel Obadia (EO & Partners)
+
+### Building B2B Brand Trust with Google Cloud and LinkedIn
+- Date: June 11, 2025
+- Time: 12:00 PM - 12:30 PM CET
+- Speakers:
+  - Al Cadena (LinkedIn)
+  - Guillaume Roques (Google Cloud)
+
+### Bridging the Trust Gap: Uncovering the Business of Trust
+- Date: June 11, 2025
+- Time: 12:30 PM - 1:00 PM CET
+- Speakers:
+  - Enzo Diliberto (Financial Times)
+  - Rob Nieuwenhuys (Financial Times)
+
+### Securing Agentic AI: Safeguarding Autonomous Decisions for a Secure Tomorrow
+- Date: June 11, 2025
+- Time: 2:00 PM - 2:30 PM CET
+- Speakers:
+  - Thomas Beaumont (Palo Alto Networks)
+  - Matt Colman (IBM Cybersecurity Services EMEA CyberDefend Centre of Excellence)
+
+### Striving for Growth in Operations with Tech
+- Date: June 11, 2025
+- Time: 2:30 PM - 3:00 PM CET
+- Speakers:
+  - Hélène Chaplain (Pernod Ricard)
+  - Maria Pia De Caro (Pernod Ricard)
+
+### Inside Outshift - Cisco's Incubation Engine: From Quantum Networking to Building the Internet of Agents
+- Date: June 11, 2025
+- Time: 3:00 PM - 3:30 PM CET
+- Speakers: Hervé Muyal (Cisco Outshift)
+
+### Evolution of Human Data in the Era of AI Agent
+- Date: June 11, 2025
+- Time: 3:30 PM - 4:00 PM CET
+- Speakers: Olga Megorskaya (Toloka AI)
+
+### Exclusive Preview Launch: Fortune Europe's Most Innovative Companies
+- Date: June 11, 2025
+- Time: 4:30 PM - 5:00 PM CET
+
+### Invisible Innovation: The Back-End Decisions That Define Startup Success
+- Date: June 11, 2025
+- Time: 5:30 PM - 6:00 PM CET
+- Speakers:
+  - Yazeed Al-Shamsi (Ejari)
+  - Abdullah Alshamrani (Center of Digital Entrepreneurship)
+  - Basma Dawwas (Tahlouf)
+  - Mohamad Ibrahim (Penny Software)
+
+## Pitch Studio
+
+### Healing Through Innovation: Startups Against Cancer
+- Date: June 11, 2025
+- Time: 9:30 AM - 10:30 AM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### AI, Tech & #huManpower: Redefining the Future of Work
+- Date: June 11, 2025
+- Time: 10:45 AM - 11:45 AM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Investor Reverse Pitch
+- Date: June 11, 2025
+- Time: 11:55 AM - 12:30 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Final of the VivaTech Innovation of the Year - Crowning the Best in Innovation
+- Date: June 11, 2025
+- Time: 1:35 PM - 2:20 PM CET
+- Speakers:
+  - Jaja Liao (25madison)
+  - Jeff Taylor (TechCrunch)
+  - Shabir Vasram (Daphni)
+  - Howard Wright (Nvidia)
+
+### Final of the Tech For Change Awards - Innovation That Moves the World Forward
+- Date: June 11, 2025
+- Time: 2:25 PM - 3:10 PM CET
+- Speakers:
+  - Peter Hopwood (Hopwood Story & Speaker Coaching)
+  - Charlie Perreau (Les Echos)
+  - Andrei Xydas (Lightrock)
+
+### Final of the Next Startupper Challenge - Championing the Next Gen of Entrepreneurs
+- Date: June 11, 2025
+- Time: 3:15 PM - 4:00 PM CET
+- Speakers:
+  - Peter Hopwood (Hopwood Story & Speaker Coaching)
+  - Julie Huguet (La French Tech)
+
+### Impact 2035: Shape the Future with OVHcloud
+- Date: June 11, 2025
+- Time: 4:05 PM - 5:05 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Japanese Corporates Looking for Startups: Reverse Pitch Session
+- Date: June 11, 2025
+- Time: 5:15 PM - 6:00 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+## Founders Lounge
+
+### Execution is Everything: How Founders Deliver at Scale
+- Date: June 11, 2025
+- Time: 10:00 AM - 10:45 AM CET
+- Speakers:
+  - Jaime Castillo (Shakers)
+  - Gabriel Hubert (Dust)
+  - Katya Hughes (Inflection Point Studio)
+
+### Born Global: Building for the World from Day One
+- Date: June 11, 2025
+- Time: 12:00 PM - 12:45 PM CET
+- Speakers:
+  - Andreas Blattmann (Black Forest Labs)
+  - Vera Kempf (Singulart)
+  - Jeremy Navon (Pitch My Startup)
+
+### Lessons from France's Fastest Growing Companies
+- Date: June 11, 2025
+- Time: 2:30 PM - 3:15 PM CET
+
+### Borderless Growth: How to Scale Internationally
+- Date: June 11, 2025
+- Time: 3:30 PM - 4:15 PM CET
+- Speakers:
+  - Steven Bourgeois (EuraTechnologies)
+  - Sergey Petrov (Finom)
+  - Frances Simowitz (Quay Acceleration)
+
+### Women in Tech: Breaking Fundraising Barriers & Leading the Way
+- Date: June 11, 2025
+- Time: 4:30 PM - 5:15 PM CET
+- Speakers:
+  - Natacha Brami (Sistafund)
+  - Adrien Chaltiel (Eldorado)
+  - Danila De Stefano (Unobravo)
+
+## Investor Lounge
+
+### Frugal AI: Optimizing AI Infrastructure for Efficiency and Scale
+- Date: June 11, 2025
+- Time: 2:00 PM - 2:45 PM CET
+- Speakers:
+  - William Bao Bean (Orbit)
+  - Damien Henault (Forgepoint Capital)
+  - Anaïs Monlong (Iris)
+
+### LP Co-Investment – Strategic Opportunity or Fool's Game?
+- Date: June 11, 2025
+- Time: 2:45 PM - 3:30 PM CET
+
+### Building Smarter Funds: How Automation Can Enhance VC Performance
+- Date: June 11, 2025
+- Time: 3:30 PM - 4:15 PM CET
+- Speakers:
+  - Tommaso Moraca (Vento)
+  - Alexis Robert (Kima Ventures)
+
+---
+
+Event Location: Paris Expo Porte de Versailles, 1 Place de la Porte de Versailles, F-75015 Paris, France  
+Event Dates: June 11-14, 2025
+
+# VivaTech 2025 Program - June 12, 2025
+
+## Dôme de Paris
+
+### AI, Robotics, Humans and The End of Work As We Know It?
+- Date: June 12, 2025
+- Time: 1:30 PM - 2:00 PM CET
+- Speakers: 
+  - Daniel Diez (Agility Robotics)
+  - Digit The Robot (Agility Robotics)
+
+### Racing the Planet: A Mission in Earth's Outer Space
+- Date: June 12, 2025
+- Time: TBA (Timeslot Coming Soon)
+
+### New Worlds, New Markets: The Future of Space is Now
+- Date: June 12, 2025
+- Time: TBA (Timeslot Coming Soon)
+- Speakers: Vanessa Wyche (NASA)
+
+### Stardust and Startups: Expanding Humanity's Horizon
+- Date: June 12, 2025
+- Time: TBA (Timeslot Coming Soon)
+
+### Viva Night
+- Date: June 12, 2025
+- Time: 6:00 PM - 9:00 PM CET
+- Description: Live Nation and VivaTech present VIVA NIGHT featuring French electro duo THE BLAZE
+
+## Stage One
+
+### LVMH Innovation Award
+- Date: June 12, 2025
+- Time: 9:30 AM - 10:15 AM CET
+- Speakers: Bernard Arnault (LVMH)
+
+### SWE Agents and the Future of Programming
+- Date: June 12, 2025
+- Time: 10:30 AM - 10:50 AM CET
+- Track: Tech Leaders Summit
+- Speakers: Thomas Dohmke (GitHub)
+
+### The Autonomous Coder: How is Agentic AI Revolutionizing Software Development?
+- Date: June 12, 2025
+- Time: 10:50 AM - 11:20 AM CET
+- Track: Tech Leaders Summit
+- Speakers:
+  - Stéphane Bout (McKinsey)
+  - Eiso Kant (Poolside)
+
+### AI for R&D: Deep Learning Surrogate
+- Date: June 12, 2025
+- Time: 11:20 AM - 11:50 AM CET
+- Track: Tech Leaders Summit
+- Speakers: Hugues Lavandier (McKinsey)
+
+### Powering Stores with Data and AI
+- Date: June 12, 2025
+- Time: 12:55 PM - 1:20 PM CET
+- Speakers:
+  - Thierry Gadou (VusionGroup)
+  - Emmanuel Grenier (Carrefour)
+
+### Scaling with Vision: Resilience, Reinvention, and the Future of AI
+- Date: June 12, 2025
+- Time: 1:20 PM - 1:40 PM CET
+- Speakers:
+  - Fidji Simo (Instacart)
+  - Anthony Morel (BFM Business)
+
+### AI with a Human Touch: Where Technology Meets the Art of Hospitality
+- Date: June 12, 2025
+- Time: 1:40 PM - 1:55 PM CET
+- Speakers: Henri Giscard d'Estaing (ClubMed)
+
+### The Rise of Sovereign Scientific AI
+- Date: June 12, 2025
+- Time: 2:20 PM - 2:50 PM CET
+- Speakers:
+  - Emmanuel Frenehard (Sanofi)
+  - Patrick Grady (TetraScience)
+  - Rory Kelleher (Nvidia)
+
+### AI Drug Discovery
+- Date: June 12, 2025
+- Time: 2:50 PM - 3:15 PM CET
+- Speakers:
+  - Colin Murdoch (Isomorphic Labs)
+  - Benoit Georges (Les Echos)
+
+### Eyewear: A Gateway to the Future
+- Date: June 12, 2025
+- Time: 3:15 PM - 3:30 PM CET
+- Speakers:
+  - Paul du Saillant (EssilorLuxottica)
+  - Maurice Lévy (Publicis Groupe)
+
+### AI, Nuclear and the Quest for Limitless (Clean) Energy
+- Date: June 12, 2025
+- Time: 4:35 PM - 5:05 PM CET
+- Speakers:
+  - Julien Garrel (Nuward)
+  - Michel Laberge (General Fusion)
+
+### VivaTech Global Awards Ceremony
+- Date: June 12, 2025
+- Time: 5:45 PM - 7:00 PM CET
+- Speakers: Isabelle Johannessen (TechCrunch)
+
+## Blue Stage
+
+### AI-Powered Drug Innovation: From Discovery to Development
+- Date: June 12, 2025
+- Time: 10:00 AM - 10:45 AM CET
+- Track: Health & Longevity
+- Speakers:
+  - Denis Barrier (Cathay Innovation)
+  - Nicolas Lopez Carranza (Instadeep)
+
+### AI vs. Aging: The Quest for Longevity in the Age of Machine Learning
+- Date: June 12, 2025
+- Time: 10:50 AM - 11:15 AM CET
+- Track: Health & Longevity
+- Speakers: Joe Betts-LaCroix (Retro Biosciences)
+
+### The Quantified Self: Wearables, AI, and the Predictive Power of Personalized Data
+- Date: June 12, 2025
+- Time: 11:20 AM - 11:45 AM CET
+- Track: Health & Longevity
+- Speakers: Holly Shelton (ŌURA)
+
+### Step into Healing: How is AR/VR Rewriting the Rules of Therapy?
+- Date: June 12, 2025
+- Time: 11:50 AM - 12:15 PM CET
+- Track: Health & Longevity
+- Speakers: Eran Orr (XRHealth)
+
+### Mind Matters: What is Driving the Mental Health App Explosion?
+- Date: June 12, 2025
+- Time: 12:20 PM - 12:55 PM CET
+- Track: Health & Longevity
+- Speakers:
+  - Fanny Jacq (Edra)
+  - John Naslund (Harvard)
+  - Michel Treskow (Eight Roads Ventures)
+
+### Korea's Sustainable Shift: Pioneering Green Trade
+- Date: June 12, 2025
+- Time: 2:00 PM - 2:10 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers: Inho Lee (KITA)
+
+### AI to the Rescue? Re-Charting the Course to Net-Zero Energy
+- Date: June 12, 2025
+- Time: 2:15 PM - 2:50 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Sandrine Berthet (France)
+  - Jessica Burley (Planet A Ventures)
+  - Scott Likens (PWC)
+  - Michel Lutz (TotalEnergies)
+
+### Harnessing the Tides: Innovation at the Ocean's Edge
+- Date: June 12, 2025
+- Time: 2:55 PM - 3:20 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Oliver Smith (Fortune)
+  - Bernt Erik Westre (Minesto)
+
+### Decarbonizing Tomorrow: The Role of Carbon Removal Today
+- Date: June 12, 2025
+- Time: 3:25 PM - 4:00 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Freya Burton (LanzaTech)
+  - Riddhi Kanetkar (Business Insider)
+  - Marta Krupinska (CUR8)
+  - Andrew Shebbeare (Counteract)
+
+### The Butterfly Effect: Rethinking AI's Impact on the Planet and Society
+- Date: June 12, 2025
+- Time: 4:20 PM - 4:35 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers: Sasha Luccioni (Hugging Face)
+
+### Clean By Design: How Can We Create Green(er) AI?
+- Date: June 12, 2025
+- Time: 4:40 PM - 5:15 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Kate Kallot (Amini)
+  - Sasha Luccioni (Hugging Face)
+  - Siddarth Singh (International Energy Agency)
+
+## Black Stage
+
+### What Comes After ESG? Rethinking Responsibility, Results and Relevance
+- Date: June 12, 2025
+- Time: 10:00 AM - 10:30 AM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Kat Borlongan (European Innovation Council)
+  - Chris French (NatureMetrics)
+  - Ruth Harper (ManpowerGroup)
+  - Mathieu Wallich-Petit (KPMG France)
+
+### Founder's Story: Gourmey & Partech
+- Date: June 12, 2025
+- Time: 10:35 AM - 11:00 AM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Alison Imbert (Partech)
+  - Nicolas Morin-Forest (Gourmey)
+
+### Democratizing Data: Growing Food in a Planet Under Pressure
+- Date: June 12, 2025
+- Time: 11:05 AM - 11:40 AM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Kate Kallot (Amini)
+  - Bernhard Kowatsch (United Nations World Food Programme)
+  - Alex Orenstein (Dacarte)
+  - Ana Rold (Diplomatic Courier)
+
+### How Can Tech Help Us Preserve the Natural Environment?
+- Date: June 12, 2025
+- Time: 11:45 AM - 12:20 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Emily Charry Tissier (Whale Seeker)
+  - Thomas Elliot (Restor)
+  - Karl Hamilton (European Environment Agency)
+  - Stuart Minchin (Pacific Community-SPC)
+
+### Design Smarter. Trace Clearly. Waste Less: Building a Better Retail Model
+- Date: June 12, 2025
+- Time: 12:25 PM - 1:00 PM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Arnaud Lajoinie (LVMH ; Nona Source)
+  - Sarah Tayeb (Ebay France)
+  - Dounia Wone (Vestiaire Collective)
+
+### What's Next for DEI? - Allyship in Action: The Future of Inclusive Innovation
+- Date: June 12, 2025
+- Time: 2:00 PM - 2:35 PM CET
+- Track: Work Reimagined
+- Speakers:
+  - Ilias Benjelloun (ElanTech)
+  - Emily Witko (Hugging Face)
+
+### What You're Looking For: How AI Is Changing Search Engines
+- Date: June 12, 2025
+- Time: 2:40 PM - 3:25 PM CET
+- Track: Ethics, Privacy & Governance
+- Speakers:
+  - Julie Bornstein (Daydream)
+  - Annelies Jansen (ProRata)
+  - Chirag Shah (University of Washington)
+
+### All-You-Can-Eat: Can You Balance AI's Appetite for Data & Privacy?
+- Date: June 12, 2025
+- Time: 3:30 PM - 4:05 PM CET
+- Track: Ethics, Privacy & Governance
+- Speakers:
+  - Niall Firth (MIT Technology Review)
+  - Amba Kak (AI Now Institute)
+  - Philip Rathle (Neo4j)
+  - Anu Talus (European Data Protection Board)
+
+### Beyond the Glitch: Understanding and Mitigating AI Hallucinations
+- Date: June 12, 2025
+- Time: 4:10 PM - 4:40 PM CET
+- Track: Ethics, Privacy & Governance
+- Speakers:
+  - Amr Awadallah (Vectara)
+  - Giada Pistilli (Hugging Face)
+  - Sasha Rubel (Amazon Web Services)
+
+### Shared Progress: How Can Open-Sourcing Speed the AI Race?
+- Date: June 12, 2025
+- Time: 4:45 PM - 5:30 PM CET
+- Track: Ethics, Privacy & Governance
+- Speakers:
+  - Niall Firth (MIT Technology Review)
+  - Audrey Herblin-Stoop (Mistral AI)
+  - Jean-Baptiste Kempf (Scaleway, Playruo)
+  - +2 speakers
+
+## Purple Stage
+
+### Female Founder Challenge
+- Date: June 12, 2025
+- Time: 9:45 AM - 10:40 AM CET
+- Speakers:
+  - Hélène Briand (Verley)
+  - Elissa Brunato (Radiant Matter)
+  - Aranzazu Carmona Orbezo (Parallel Carbon)
+  - +8 speakers
+
+### Unveiling Startup Genome's 2025 Global Startup Ecosystem Report
+- Date: June 12, 2025
+- Time: 10:50 AM - 11:50 AM CET
+- Track: Startups, Scaleups & Growth
+- Speakers:
+  - Stephan Kuester (Startup Genome)
+  - Elizabeth Scott (Turing Innovation Catalyst Manchester)
+  - Daria Siegel (New York City Economic Development Corporation)
+
+### I Want You: Solving the Tech Talent Paradox
+- Date: June 12, 2025
+- Time: 11:55 AM - 12:30 PM CET
+- Track: Startups, Scaleups & Growth
+- Speakers:
+  - Jeremy Clédat (Welcome to the Jungle)
+  - Christian Nagel (Earlybird)
+  - Nalin Patel (Pitchbook)
+
+### Unicorn Hunting: Unveiling What Makes Startup Value Soar
+- Date: June 12, 2025
+- Time: 12:35 PM - 1:00 PM CET
+- Track: Startups, Scaleups & Growth
+- Speakers:
+  - John Chambers (JC2 Ventures, Cisco Systems)
+  - Éanna Kelly (Sifted)
+  - Ilya Strebulaev (Stanford Business School)
+
+### The 3 W's of Quantum: Who's Ahead, What's It About, and Why Should You Care?
+- Date: June 12, 2025
+- Time: 2:00 PM - 2:35 PM CET
+- Track: Cybersecurity & Quantum Computing
+- Speakers:
+  - Manjari Chandran-Ramesh (Amadeus Capital Partner)
+  - Loïc Henriet (Pasqal)
+  - Daphné Leprince-Ringuet (Sifted)
+  - Katie Pizzolato (IBM)
+
+### Trust Through Security: Reinventing Digital Identity Protection
+- Date: June 12, 2025
+- Time: 3:20 PM - 3:55 PM CET
+- Track: Cybersecurity & Quantum Computing
+- Speakers:
+  - Nathalie Gosset (Thales)
+  - Philippe Poutonnet (Docusign)
+  - Mariam Zaidi (Trtworld)
+
+### How Can Companies Navigate the New Age of AI-Powered Cyber Threats?
+- Date: June 12, 2025
+- Time: 4:00 PM - 5:00 PM CET
+- Track: Cybersecurity & Quantum Computing
+- Speakers:
+  - John Chambers (JC2 Ventures, Cisco Systems)
+  - Guy Philippe Goldstein (Expon Capital)
+  - Olivier Nautet (BNP Paribas)
+  - +2 speakers
+
+## Discovery Stage
+
+### Qubits or not qubits? State of the art of Fault Tolerant Quantum Computing in 2025
+- Date: June 12, 2025
+- Time: 10:00 AM - 10:30 AM CET
+- Track: Cybersecurity & Quantum Computing
+- Speakers:
+  - Thierry Bonhomme (Académie des Technologies)
+  - Olivier Ezratty (QEI)
+  - Catherine Lambert (CERFACS)
+  - Gérard Roucairol (Académie des Technologies)
+
+### Your Data: AI-Ready and activated with Salesforce Data Cloud for Electra
+- Date: June 12, 2025
+- Time: 10:30 AM - 11:00 AM CET
+- Track: Artificial Intelligence
+- Speakers:
+  - Maxime Le Gelard (Salesforce)
+  - Christelle Piton (Salesforce)
+
+### Innovating for a Sustainable Future with EDF
+- Date: June 12, 2025
+- Time: 11:30 AM - 12:00 PM CET
+- Track: Sustainability, Climate & Mobility
+
+### New Frontiers of Beauty Powered By North Asia Open Innovation
+- Date: June 12, 2025
+- Time: 2:00 PM - 2:30 PM CET
+- Track: Culture & Lifestyle
+
+### Enterten: the 10 entertainment trends that will shape 2025
+- Date: June 12, 2025
+- Time: 2:30 PM - 3:15 PM CET
+- Track: Creative Industries & Gaming
+- Speakers: Marion Bories (Webedia)
+
+### The future of filming on location: Certified digital replicas & IP ownership
+- Date: June 12, 2025
+- Time: 3:15 PM - 3:30 PM CET
+- Track: Culture & Lifestyle
+- Speakers:
+  - Kristen Davis (CinqC)
+  - Maciej Zemojcin (VeriSearchai)
+
+### "Sensora" Live Demo: Turning Emotions into KPIs
+- Date: June 12, 2025
+- Time: 3:30 PM - 3:50 PM CET
+- Track: Work Reimagined
+- Speakers: Othman Chiheb (HABS)
+
+### From Players to Co-Creators: Harnessing Cross-Media Storytelling to Build Lifelong Fan Communities
+- Date: June 12, 2025
+- Time: 4:30 PM - 4:45 PM CET
+- Track: Creative Industries & Gaming
+- Speakers: Catherine Martel (Haus of Park)
+
+### Game On: From Web3 to Beauty Battles
+- Date: June 12, 2025
+- Time: 4:45 PM - 5:15 PM CET
+- Track: Creative Industries & Gaming
+- Speakers:
+  - Camille Chalvin (Makemepulse)
+  - Sarah Cutler (Makemepulse)
+
+## Exec Arena
+
+### The New Efficiency Playbook: Reinventing Marketing for the Age of AI
+- Date: June 12, 2025
+- Time: 10:00 AM - 10:30 AM CET
+- Speakers: Teresa Barreira (Publicis Sapient)
+
+### How Filorga unlocks e-retail potential with Equadis - moving from a product approach to company-wide impact
+- Date: June 12, 2025
+- Time: 10:30 AM - 11:00 AM CET
+- Speakers:
+  - Ghislain Esquerre (Equadis)
+  - Olivia Oliveri (Laboratoires FILORGA)
+  - Lucie Quaeybeur (Laboratoires FILORGA)
+
+### The Time is Now for Holistic Audience Measurement
+- Date: June 12, 2025
+- Time: 11:00 AM - 11:30 AM CET
+- Speakers: Emilie Carcassonne (Audience Project)
+
+### From blind spots to smart spaces: how Nhood boosted marketing efficiency with real-time video intelligence
+- Date: June 12, 2025
+- Time: 11:30 AM - 12:00 PM CET
+- Speakers: Alexandre Boutillon (XXII)
+
+### Keep the lights on: Smarter Marketing Resilience in Uncertain Times
+- Date: June 12, 2025
+- Time: 12:00 PM - 12:30 PM CET
+- Speakers: Jo Tenzer (CNN International Commercial)
+
+### The AI Threat No One's Watching: Identity at Risk
+- Date: June 12, 2025
+- Time: 3:00 PM - 3:30 PM CET
+
+### Applying AI to Mission Critical Documents: How to Avoid the Pitfalls
+- Date: June 12, 2025
+- Time: 3:30 PM - 4:00 PM CET
+- Speakers:
+  - Stéphan Donzé (AODocs)
+  - Fabien Poletti (AODocs)
+
+### From Concept to Impact: How to industrialize AI Agents
+- Date: June 12, 2025
+- Time: 4:30 PM - 5:00 PM CET
+- Speakers:
+  - Quentin Amaudry (Mendo)
+  - Julien Floch (Wavestone)
+  - Cécile Schuster (Microsoft France)
+
+### Scaling AI in media: headlines and hard truths
+- Date: June 12, 2025
+- Time: 5:30 PM - 6:00 PM CET
+- Speakers:
+  - Aditi Luykx (Politico)
+  - Freddie Martyn (Politico)
+  - Clémence Vatier (Politico)
+
+## Pitch Studio
+
+### Greentech Innovation 2025 Winners Reveal
+- Date: June 12, 2025
+- Time: 9:30 AM - 10:30 AM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Investor Reverse Pitch
+- Date: June 12, 2025
+- Time: 11:55 AM - 12:35 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Accelerating Innovation for the Future of Cultural, Creative and Digital Industries
+- Date: June 12, 2025
+- Time: 1:45 PM - 2:45 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Pitch Contest INPI 2025 with HEC Paris
+- Date: June 12, 2025
+- Time: 2:55 PM - 3:55 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Portugal Thrives in Innovation
+- Date: June 12, 2025
+- Time: 4:05 PM - 5:05 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+### Brazil Tech Winner
+- Date: June 12, 2025
+- Time: 5:15 PM - 6:00 PM CET
+- Speakers: Peter Hopwood (Hopwood Story & Speaker Coaching)
+
+## Founders Lounge
+
+### Founders Discussion - Go-to-Market Playbook: What Founders Got Right (and Wrong)
+- Date: June 12, 2025
+- Time: 10:00 AM - 10:45 AM CET
+- Speakers:
+  - Alban De Préville (Dalma)
+  - Katya Hughes (Inflection Point Studio)
+  - Morgan O'Hana (Defacto)
+
+### Founders Discussion - Open Source: A Founder's Guide to Risk vs. Reward
+- Date: June 12, 2025
+- Time: 11:00 AM - 11:45 AM CET
+- Speakers:
+  - Jean-François Drweski (Amazon Web Services)
+  - Stephan Hadinger (Amazon Web Services)
+  - Matthieu Lavergne (Serena Capital)
+  - Jérémy Zaccherini (Zama)
+
+### Founders Discussion - What Are Investors Looking For?
+- Date: June 12, 2025
+- Time: 12:00 PM - 12:45 PM CET
+- Speakers:
+  - Moojan Asghari (Thousand Faces)
+  - Alex Joel-Carbonell (HV Capital)
+  - Samantha Jérusalmy (Elaia Partners)
+
+### Founders Discussion - The Do's and Don'ts of Fundraising
+- Date: June 12, 2025
+- Time: 2:30 PM - 3:15 PM CET
+- Speakers:
+  - Jeremy Navon (Pitch My Startup)
+  - Maxine Rior (Northzone)
+  - Audrey Soussan (Ventech Capital)
+
+### Founders Discussion - How Can AI Optimize Customer Acquisition?
+- Date: June 12, 2025
+- Time: 3:30 PM - 4:15 PM CET
+- Speakers:
+  - Heba Hitti (Serena)
+  - Somayeh Taheri (UrbainChain)
+
+### Founders Discussion - Women in Tech - Courage as a Catalyst for Growth
+- Date: June 12, 2025
+- Time: 4:30 PM - 5:15 PM CET
+- Speakers:
+  - Paula Menéndez Pausa (OLY Platform)
+  - Inès Multrier (Nelson Mobility)
+
+## Investor Lounge
+
+### The AI Investment Equation: Balancing Innovation and Risk
+- Date: June 12, 2025
+- Time: 10:30 AM - 11:15 AM CET
+- Speakers:
+  - Marie Bos (HV Capital)
+  - Eric Gossart (Serena)
+  - Ashish Puri (Lightrock)
+
+### Building a Truly Inclusive Ecosystem
+- Date: June 12, 2025
+- Time: 11:15 AM - 12:00 PM CET
+- Speakers:
+  - Nora Bavey (Unconventional VC)
+  - Zoe Peden (Ananda Impact Ventures)
+  - Jérôme Sussfeld (RAISE Sherpas)
+
+### Fundraising in 2025
+- Date: June 12, 2025
+- Time: 2:00 PM - 2:45 PM CET
+- Speakers:
+  - Pedro Barros (AVP)
+  - Claire Houry (Ventech)
+  - Sebastian Peck (Kompas VC)
+
+### European companies going to the US
+- Date: June 12, 2025
+- Time: 2:45 PM - 3:30 PM CET
+- Speakers:
+  - Marcel Dridje (EBAN, SBA)
+  - Hussein Kanji (Hoxton Ventures)
+  - Audra Shallal (Corenvest)
+
+### Scaling Deep Tech: Funding Challenges and Opportunities in Europe
+- Date: June 12, 2025
+- Time: 3:30 PM - 4:15 PM CET
+- Speakers:
+  - Anne-Sophie Carrese (Elaia Partners)
+  - Andreas Schwarzenbrunner (Speedinvest)
+
+## Workshop 1
+
+### Sustainability Executive Summit
+- Date: June 12, 2025
+- Time: 10:00 AM - 11:30 AM CET
+- Track: Sustainability, Climate & Mobility
+- Speakers:
+  - Rachel Delacour (Sweep)
+  - Kate Kallot (Amini)
+  - Sasha Luccioni (Hugging Face)
+  - +3 speakers
+
+### Sustainability Executive Summit
+- Date: June 12, 2025
+- Time: 11:35 AM - 12:30 PM CET
+- Track: Sustainability, Climate & Mobility
+
+---
+
+Event Location: Paris Expo Porte de Versailles, 1 Place de la Porte de Versailles, F-75015 Paris, France  
+Event Dates: June 11-14, 2025

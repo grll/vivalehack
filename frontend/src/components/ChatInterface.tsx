@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -51,52 +51,58 @@ const ChatInterface = () => {
     t('chat.findingEvents')
   ];
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'end',
-      inline: 'nearest'
-    });
-  };
+  const scrollToBottom = useCallback(() => {
+    try {
+      messagesEndRef.current?.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest'
+      });
+    } catch (error) {
+      console.error('Error scrolling to bottom:', error);
+    }
+  }, []);
 
   // Enhanced smooth scroll for new messages
-  const smoothScrollToBottom = () => {
-    if (messagesEndRef.current) {
-      const container = messagesEndRef.current.parentElement;
-      if (container) {
-        const targetScrollTop = container.scrollHeight - container.clientHeight;
-        const startScrollTop = container.scrollTop;
-        const distance = targetScrollTop - startScrollTop;
-        const duration = 800; // 800ms animation
-        let startTime: number | null = null;
+  const smoothScrollToBottom = useCallback(() => {
+    try {
+      if (messagesEndRef.current) {
+        const container = messagesEndRef.current.parentElement;
+        if (container) {
+          const targetScrollTop = container.scrollHeight - container.clientHeight;
+          const startScrollTop = container.scrollTop;
+          const distance = targetScrollTop - startScrollTop;
+          const duration = 800; // 800ms animation
+          let startTime: number | null = null;
 
-        const animateScroll = (currentTime: number) => {
-          if (startTime === null) startTime = currentTime;
-          const timeElapsed = currentTime - startTime;
-          const progress = Math.min(timeElapsed / duration, 1);
+          const animateScroll = (currentTime: number) => {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            
+            // Easing function for smooth slow ending (ease-out)
+            const easeOut = 1 - Math.pow(1 - progress, 3);
+            
+            container.scrollTop = startScrollTop + (distance * easeOut);
+            
+            if (progress < 1) {
+              requestAnimationFrame(animateScroll);
+            }
+          };
           
-          // Easing function for smooth slow ending (ease-out)
-          const easeOut = 1 - Math.pow(1 - progress, 3);
-          
-          container.scrollTop = startScrollTop + (distance * easeOut);
-          
-          if (progress < 1) {
-            requestAnimationFrame(animateScroll);
-          }
-        };
-        
-        requestAnimationFrame(animateScroll);
+          requestAnimationFrame(animateScroll);
+        }
       }
+    } catch (error) {
+      console.error('Error in smooth scroll:', error);
     }
-  };
+  }, []);
 
   // Load chat when URL contains chat ID
   useEffect(() => {
     const loadChatFromUrl = async () => {
       if (selectedChatId && selectedChatId !== chatId) {
         try {
-          // For now, we'll just set the chatId from URL
-          // The actual chat loading will be simplified since we're changing the API structure
           setChatId(selectedChatId);
           setShowSuggestions(false);
           
@@ -128,29 +134,62 @@ const ChatInterface = () => {
             
             setMessages(parsedMessages);
             setTimeout(scrollToBottom, 100);
+          } else {
+            // Fetch chat messages from backend if not available in context
+            console.log(`Fetching chat messages for ID: ${selectedChatId}`);
+            
+            const response = await api.get(`/chat/${selectedChatId}`);
+            console.log('Chat response:', response.data);
+            
+            if (response.data && response.data.messages) {
+              // Transform backend messages to frontend format
+              const backendMessages = response.data.messages.map((msg: {
+                id: string;
+                content: string;
+                role: 'user' | 'assistant' | 'system' | 'developer';
+                timestamp: string;
+              }) => ({
+                _id: msg.id,
+                content: msg.content,
+                role: msg.role,
+                createdAt: msg.timestamp,
+                updatedAt: msg.timestamp,
+                references: {}
+              }));
+              
+              setMessages(backendMessages);
+              setTimeout(scrollToBottom, 100);
+            }
           }
         } catch (error) {
           console.error('Error loading chat from URL:', error);
+          // If chat not found or error, show suggestions
+          setShowSuggestions(true);
+          setMessages([]);
         }
       }
     };
 
     loadChatFromUrl();
-  }, [selectedChatId, chatId, selectedMessages]);
+  }, [selectedChatId, chatId, scrollToBottom]);
 
-  // Handle selected conversation from sidebar
+  // Handle selected conversation from sidebar - separate effect
   useEffect(() => {
-    if (selectedChatId && selectedMessages.length > 0) {
-      setChatId(selectedChatId);
-      setMessages(selectedMessages);
-      setShowSuggestions(false);
-      setTimeout(scrollToBottom, 100);
+    if (selectedChatId && Array.isArray(selectedMessages) && selectedMessages.length > 0 && selectedChatId !== chatId) {
+      try {
+        setChatId(selectedChatId);
+        setMessages(selectedMessages);
+        setShowSuggestions(false);
+        setTimeout(scrollToBottom, 100);
+      } catch (error) {
+        console.error('Error handling selected conversation:', error);
+      }
     }
-  }, [selectedChatId, selectedMessages]);
+  }, [selectedChatId, chatId, scrollToBottom]);
 
   // Handle reset chat (new conversation)
   useEffect(() => {
-    if (!selectedChatId && selectedMessages.length === 0) {
+    if (!selectedChatId && (!selectedMessages || selectedMessages.length === 0)) {
       setMessages([]);
       setChatId(null);
       setShowSuggestions(true);
@@ -203,11 +242,14 @@ const ChatInterface = () => {
 
       const response = await api.post('/messages', body);
 
+      // Handle response - API returns both id and openai_id, use id preferentially
+      const responseId = response.data.id || response.data.openai_id;
+      
       // Set chat ID from response if it exists (for new chats)
-      if (response.data.id && !chatId) {
-        setChatId(response.data.id);
+      if (responseId && !chatId) {
+        setChatId(responseId);
         // Navigate to the new chat URL
-        navigateToChat(response.data.id);
+        navigateToChat(responseId);
       }
 
       // Parse the assistant response - new format has id and message
@@ -230,7 +272,7 @@ const ChatInterface = () => {
 
       // Add assistant response
       const assistantMessage: Message = {
-        _id: response.data.id || Date.now().toString(),
+        _id: responseId || Date.now().toString(),
         content: messageContent,
         role: 'assistant',
         references: messageReferences
@@ -305,13 +347,21 @@ const ChatInterface = () => {
                     <div className="relative">
                       <p 
                         key={loadingTextIndex} 
-                        className="text-slate-400 dark:text-slate-500 text-sm opacity-80 animate-pulse relative overflow-hidden loading-text-enhanced animate-shimmer rounded-lg px-4 py-3 transition-all duration-500 ease-in-out transform animate-slideInUp"
+                        className="relative overflow-hidden rounded-xl px-6 py-4 transition-all duration-500 ease-in-out transform animate-slideInUp bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border border-blue-100 dark:border-slate-600 shadow-sm"
                       >
-                        <span className="relative z-10 animate-fadeIn font-medium">
+                        <span className="relative z-10 animate-fadeIn font-medium text-blue-700 dark:text-blue-300 text-base">
                           {loadingTexts[loadingTextIndex]}
                         </span>
+                        {/* Loading dots animation */}
+                        <span className="inline-flex ml-2">
+                          <span className="animate-bounce text-blue-500 dark:text-blue-400" style={{ animationDelay: '0ms' }}>.</span>
+                          <span className="animate-bounce text-blue-500 dark:text-blue-400" style={{ animationDelay: '150ms' }}>.</span>
+                          <span className="animate-bounce text-blue-500 dark:text-blue-400" style={{ animationDelay: '300ms' }}>.</span>
+                        </span>
                         {/* Shimmer effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-300/30 dark:via-slate-400/30 to-transparent translate-x-[-100%] animate-shimmerPass"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 dark:via-slate-400/20 to-transparent translate-x-[-100%] animate-shimmerPass rounded-xl"></div>
+                        {/* Subtle pulse effect */}
+                        <div className="absolute inset-0 bg-blue-100/30 dark:bg-blue-900/20 rounded-xl animate-pulse opacity-50"></div>
                       </p>
                     </div>
                 </div>

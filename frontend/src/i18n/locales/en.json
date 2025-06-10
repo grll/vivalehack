@@ -51,7 +51,7 @@
     "invalidEmail": "Please enter a valid email address"
   },
   "onboarding": {
-    "welcome": "Welcome to VivaTech x OpenAI",
+    "welcome": "Welcome to VivaTech 2025",
     "description": "Your AI-powered conference assistant is ready to help you navigate events, documents, and connect with fellow attendees.",
     "linkedinLabel": "LinkedIn Profile",
     "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
@@ -102,7 +102,7 @@
     "copied": "Copied!",
     "regenerate": "Regenerate response",
     "stop": "Stop generating",
-    "discoverPlaces": "Welcome to VivaTech x OpenAI",
+    "discoverPlaces": "Welcome to VivaTech 2025",
     "discoverDescription": "Your AI conference assistant for hackathon sessions, workshops, networking, and more"
   },
   "places": {

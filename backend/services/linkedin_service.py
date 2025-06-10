@@ -2,8 +2,6 @@ import httpx
 import logging
 from typing import Dict, Any
 
-from models import LinkedInProfileResponse
-
 logger = logging.getLogger(__name__)
 
 class LinkedInService:
@@ -15,7 +13,7 @@ class LinkedInService:
         self.apify_url = "https://api.apify.com/v2/acts/dev_fusion~linkedin-profile-scraper/run-sync-get-dataset-items"
         self.timeout = 60.0  # 60 seconds timeout
     
-    async def scrape_profile(self, profile_url: str) -> LinkedInProfileResponse:
+    async def scrape_profile(self, profile_url: str) -> Dict[str, Any]:
         """
         Scrape LinkedIn profile data using Apify API
         
@@ -23,7 +21,7 @@ class LinkedInService:
             profile_url: LinkedIn profile URL to scrape
             
         Returns:
-            LinkedInProfileResponse with firstName and lastName
+            Dict containing all profile data from Apify API
             
         Raises:
             Exception: If scraping fails or data is not found
@@ -62,7 +60,7 @@ class LinkedInService:
                 
                 profile_data = response_data[0]  # Get first (and only) profile
                 
-                # Extract firstName and lastName
+                # Ensure we have essential name fields for backward compatibility
                 first_name = profile_data.get("firstName", "").strip()
                 last_name = profile_data.get("lastName", "").strip()
                 
@@ -79,17 +77,21 @@ class LinkedInService:
                         name_parts = name.split(" ", 1)
                         first_name = name_parts[0] if len(name_parts) > 0 else ""
                         last_name = name_parts[1] if len(name_parts) > 1 else ""
+                    
+                    # Update the profile data with extracted names
+                    if first_name:
+                        profile_data["firstName"] = first_name
+                    if last_name:
+                        profile_data["lastName"] = last_name
                 
                 if not first_name and not last_name:
                     logger.error(f"Could not extract name from profile data: {profile_data}")
                     raise Exception("Could not extract firstName and lastName from profile data")
                 
-                logger.info(f"Successfully extracted profile: {first_name} {last_name}")
+                logger.info(f"Successfully scraped profile: {first_name} {last_name}")
+                logger.info(f"Total fields in profile: {len(profile_data)}")
                 
-                return LinkedInProfileResponse(
-                    firstName=first_name or "",
-                    lastName=last_name or ""
-                )
+                return profile_data
                 
         except httpx.TimeoutException:
             logger.error("Timeout while scraping LinkedIn profile")

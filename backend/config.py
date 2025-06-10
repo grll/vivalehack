@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     allowed_origins: List[str] = ["*"]
     
     # OpenAI Model Configuration
-    default_model: str = "gpt-4.1"
+    default_model: str = "gpt-4.1-nano"
     default_temperature: float = 1.0
     default_max_tokens: int = 2048
     default_top_p: float = 1.0
