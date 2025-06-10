@@ -190,43 +190,43 @@ class ConversationManager:
                 print(f"Error: {e}")
                 break
 
-# Example usage
-async def main():
-    # Create agent
-    agent = Agent(name="Assistant", instructions="Reply very concisely.")
+# # Example usage
+# async def main():
+#     # Create agent
+#     agent = Agent(name="Assistant", instructions="Reply very concisely.")
     
-    # Create conversation manager
-    conversation = ConversationManager(agent, workflow_name="MyConversation", default_group_id="session_1")
+#     # Create conversation manager
+#     conversation = ConversationManager(agent, workflow_name="MyConversation", default_group_id="session_1")
     
-    # Example 1: Single prompt execution
-    try:
-        response = await conversation.execute("My name is Hojjat.", group_id="session_1")
-        print(f"Response: {response}")
+#     # Example 1: Single prompt execution
+#     try:
+#         response = await conversation.execute("My name is Hojjat.", group_id="session_1")
+#         print(f"Response: {response}")
         
-        # Follow-up question
-        response = await conversation.execute("What's my name?", group_id="session_1")
-        print(f"Response: {response}")
+#         # Follow-up question
+#         response = await conversation.execute("What's my name?", group_id="session_1")
+#         print(f"Response: {response}")
         
-        response = await conversation.execute("My name is Yousuf.", group_id="session_2")
-        print(f"Response: {response}")
+#         response = await conversation.execute("My name is Yousuf.", group_id="session_2")
+#         print(f"Response: {response}")
         
-        # Follow-up question
-        response = await conversation.execute("What's my name?", group_id="session_2")
-        print(f"Response: {response}")
+#         # Follow-up question
+#         response = await conversation.execute("What's my name?", group_id="session_2")
+#         print(f"Response: {response}")
 
-                # Follow-up question
-        response = await conversation.execute("What's my name?", group_id="session_1")
-        print(f"Response: {response}")
+#                 # Follow-up question
+#         response = await conversation.execute("What's my name?", group_id="session_1")
+#         print(f"Response: {response}")
 
-        # Print conversation history
-        #print("\nConversation History:")
-        #for turn in conversation.get_history():
-        #    print(f"{turn['role'].title()}: {turn['content']}")
+#         # Print conversation history
+#         #print("\nConversation History:")
+#         #for turn in conversation.get_history():
+#         #    print(f"{turn['role'].title()}: {turn['content']}")
             
-    except Exception as e:
-        print(f"Error: {e}")
+#     except Exception as e:
+#         print(f"Error: {e}")
 
-if __name__ == "__main__":
-    # Run the main example
-    asyncio.run(main())
+# if __name__ == "__main__":
+#     # Run the main example
+#     asyncio.run(main())
     
