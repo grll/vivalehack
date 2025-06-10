@@ -3,6 +3,5 @@ node_modules
 __pycache__
 dist
 .env
-node_modules
 .vite
 .vscode
