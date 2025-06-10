@@ -70,7 +70,7 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
   };
 
   const navigateToChat = (chatId: string) => {
-    navigate(`/chat/${chatId}`);
+    navigate(`/${chatId}`);
   };
 
   const navigateToHome = () => {

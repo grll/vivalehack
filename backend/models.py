@@ -10,6 +10,7 @@ class MessageRequest(BaseModel):
 
 class MessageResponse(BaseModel):
     """Response model for message creation"""
+    id: str = Field(..., description="Conversation ID")
     openai_id: str = Field(..., description="OpenAI response ID")
     message: str = Field(..., description="The chatbot's response message")
 
@@ -21,6 +22,18 @@ class LinkedInProfileResponse(BaseModel):
     """Response model for LinkedIn profile data"""
     firstName: str = Field(..., description="First name from LinkedIn profile")
     lastName: str = Field(..., description="Last name from LinkedIn profile")
+
+class CompleteUserProfileResponse(BaseModel):
+    """Response model for complete user profile data"""
+    class Config:
+        extra = "allow"  # Allow additional fields
+    
+    # These fields are guaranteed to exist
+    profileUrl: Optional[str] = Field(None, description="LinkedIn profile URL")
+    firstName: Optional[str] = Field(None, description="First name")
+    lastName: Optional[str] = Field(None, description="Last name")
+    timestamp: Optional[str] = Field(None, description="When profile was first saved")
+    lastUpdated: Optional[str] = Field(None, description="When profile was last updated")
 
 class ChatMessage(BaseModel):
     """Model for individual chat messages"""
