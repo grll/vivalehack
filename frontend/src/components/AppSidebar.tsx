@@ -351,23 +351,60 @@ export function AppSidebar() {
 
     const formatTimestamp = (dateString: string) => {
         try {
+            // Parse the timestamp from the API response
             const date = new Date(dateString);
             const now = new Date();
-            const diffInHours = (now.getTime() - date.getTime()) / (1000 * 60 * 60);
+            
+            // Validate that the date is valid
+            if (isNaN(date.getTime())) {
+                console.error('Invalid date:', dateString);
+                return dateString;
+            }
+            
+            // Calculate difference in milliseconds
+            const diffInMs = now.getTime() - date.getTime();
+            const diffInMinutes = Math.floor(diffInMs / (1000 * 60));
+            const diffInHours = Math.floor(diffInMs / (1000 * 60 * 60));
+            const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 
-            if (diffInHours < 1) {
-                const diffInMinutes = Math.floor(diffInHours * 60);
-                return diffInMinutes <= 1 ? t('time.justNow') : t('time.minutesAgo', { count: diffInMinutes });
+            // Handle edge case where timestamp is in the future (likely wrong year)
+            if (diffInMs < 0) {
+                // If the date is in the future, it's likely a timestamp issue
+                // Try to use the current year instead
+                const correctedDate = new Date(date);
+                correctedDate.setFullYear(now.getFullYear());
+                
+                const correctedDiffInMs = now.getTime() - correctedDate.getTime();
+                const correctedDiffInMinutes = Math.floor(correctedDiffInMs / (1000 * 60));
+                const correctedDiffInHours = Math.floor(correctedDiffInMs / (1000 * 60 * 60));
+                
+                if (correctedDiffInMs >= 0) {
+                    // Use corrected values
+                    if (correctedDiffInHours < 1) {
+                        return correctedDiffInMinutes <= 1 ? t('time.justNow') : t('time.minutesAgo', { count: correctedDiffInMinutes });
+                    } else if (correctedDiffInHours < 24) {
+                        return t('time.hoursAgo', { count: correctedDiffInHours });
+                    }
+                }
+                
+                // If still in future, just show "just now"
+                return t('time.justNow');
+            }
+
+            // Normal time calculations
+            if (diffInMinutes < 1) {
+                return t('time.justNow');
+            } else if (diffInHours < 1) {
+                return t('time.minutesAgo', { count: diffInMinutes });
             } else if (diffInHours < 24) {
-                const hours = Math.floor(diffInHours);
-                return t('time.hoursAgo', { count: hours });
-            } else if (diffInHours < 24 * 7) {
-                const days = Math.floor(diffInHours / 24);
-                return t('time.daysAgo', { count: days });
+                return t('time.hoursAgo', { count: diffInHours });
+            } else if (diffInDays < 7) {
+                return t('time.daysAgo', { count: diffInDays });
             } else {
                 return date.toLocaleDateString();
             }
         } catch (error) {
+            console.error('Error formatting timestamp:', error, dateString);
             return dateString;
         }
     };
