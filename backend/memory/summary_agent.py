@@ -53,31 +53,31 @@ class ConversationManager:
         except Exception as e:
             return ""
 
-# Example usage
-async def main():
+# # Example usage
+# async def main():
 
-    inputs = """
-In your code snippet, the max_seq_length=3000 inside SFTConfig refers to the maximum input sequence length (i.e., the maximum length of tokenized input sequences the model will be trained or evaluated on).
+#     inputs = """
+# In your code snippet, the max_seq_length=3000 inside SFTConfig refers to the maximum input sequence length (i.e., the maximum length of tokenized input sequences the model will be trained or evaluated on).
 
-Clarifying the Terminology:
-	•	max_seq_length: This typically controls how long the tokenized input can be. Inputs longer than this will be truncated, and shorter inputs may be padded.
-	•	It does not directly control the maximum output length during generation. Output length is controlled by a separate parameter (e.g., max_new_tokens, max_length in generate() or inference-time settings).
+# Clarifying the Terminology:
+# 	•	max_seq_length: This typically controls how long the tokenized input can be. Inputs longer than this will be truncated, and shorter inputs may be padded.
+# 	•	It does not directly control the maximum output length during generation. Output length is controlled by a separate parameter (e.g., max_new_tokens, max_length in generate() or inference-time settings).
 
-In the context of SFTTrainer:
+# In the context of SFTTrainer:
 
-max_seq_length=3000 sets the limit for the tokenized input length passed to the model during fine-tuning (supervised fine-tuning, or SFT). If any input text gets tokenized into more than 3000 tokens, it will be truncated.
+# max_seq_length=3000 sets the limit for the tokenized input length passed to the model during fine-tuning (supervised fine-tuning, or SFT). If any input text gets tokenized into more than 3000 tokens, it will be truncated.
 
-"""
+# """
 
-    # Initialize your agent (this is just an example)
-    # agent = Agent(...)  # Your agent initialization here
-    summary_agent = Agent(model="o3-mini", name="Assistant", instructions="Reply very concisely.")
-    # Create conversation manager with memory
-    summary_agent_handle = ConversationManager(summary_agent)
+#     # Initialize your agent (this is just an example)
+#     # agent = Agent(...)  # Your agent initialization here
+#     summary_agent = Agent(model="o3-mini", name="Assistant", instructions="Reply very concisely.")
+#     # Create conversation manager with memory
+#     summary_agent_handle = ConversationManager(summary_agent)
 
-    response = await summary_agent_handle.execute(inputs)
-    print(response)
-    pass
+#     response = await summary_agent_handle.execute(inputs)
+#     print(response)
+#     pass
 
-if __name__ == "__main__":
-    asyncio.run(main())
+# if __name__ == "__main__":
+#     asyncio.run(main())
