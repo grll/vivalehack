@@ -1,6 +1,7 @@
-from agents import Agent, function_tool
+from agents import Agent, function_tool, WebSearchTool
+import os
 
-PATH_TO_SCHEDULE = "backend/data/schedule.json"
+PATH_TO_SCHEDULE = os.path.join(os.path.dirname(__file__), "..", "data", "vivatech_agenda.md")
 
 
 @function_tool

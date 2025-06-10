@@ -1,7 +1,14 @@
-from agents import Agent, InputGuardrail, GuardrailFunctionOutput, Runner
+from agents import (
+    Agent,
+    InputGuardrail,
+    GuardrailFunctionOutput,
+    Runner,
+    InputGuardrailTripwireTriggered,
+)
 from pydantic import BaseModel
-from .scheduling_agent import scheduling_agent
-from .summarization_agent import summarization_agent
+from scheduling_agent import scheduling_agent
+from summarization_agent import summarization_agent
+import asyncio
 
 
 class VivaTechConference(BaseModel):
@@ -34,3 +41,21 @@ main_agent = Agent(
     ],
     input_guardrails=[InputGuardrail(guardrail_function=viva_tech_conference_guardrail)],
 )
+
+
+async def main():
+    while True:
+        user_input = input(
+            "\nWhat would you like to know about VivaTech? (or type 'exit' to quit): "
+        )
+        if user_input.lower() == "exit":
+            break
+        try:
+            result = await Runner.run(main_agent, user_input)
+            print("\n" + result.final_output)
+        except InputGuardrailTripwireTriggered:
+            print("\nI'm sorry, I can only help with VivaTech Conference related questions.")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
