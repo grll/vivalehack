@@ -42,5 +42,4 @@ main_agent = Agent(
         scheduling_agent,
         summarization_agent,
     ],
-    input_guardrails=[InputGuardrail(guardrail_function=viva_tech_conference_guardrail)],
 )
