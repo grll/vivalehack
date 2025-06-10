@@ -8,6 +8,7 @@ from agents import (
 from pydantic import BaseModel
 from scheduling_agent import scheduling_agent
 from summarization_agent import summarization_agent
+from networking_agent import networking_agent
 import asyncio
 
 
@@ -34,10 +35,11 @@ async def viva_tech_conference_guardrail(ctx, agent, input_data):
 
 main_agent = Agent(
     name="Conference Guide",
-    instructions="You provide help to navigate Viva Tech Conference. You can help answer questions about the conference and complete related tasks. You decide which agent to handoff to based on the user's request. If the user is not asking about the Viva Tech Conference, apologize and say that you can only help with Viva Tech Conference related questions.",
+    instructions="You provide help to navigate Viva Tech Conference. You can help answer questions about the conference and complete related tasks. You decide which agent to handoff to based on the user's request.",
     handoffs=[
         scheduling_agent,
         summarization_agent,
+        networking_agent,
     ],
     input_guardrails=[InputGuardrail(guardrail_function=viva_tech_conference_guardrail)],
 )
