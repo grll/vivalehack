@@ -1,10 +1,11 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import logging
 from datetime import datetime
 import uuid
-
+from agents.mcp import MCPServerStdio
 from config import settings
 from models import (
     MessageRequest, MessageResponse, HealthResponse, ErrorResponse,
@@ -16,6 +17,25 @@ from services import conversation_service, chat_storage, linkedin_service, user_
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.log_level))
 logger = logging.getLogger(__name__)
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    async with MCPServerStdio(
+        params={
+            "command": "node",
+            "args": [
+                "../google-calendar-mcp/build/index.js",
+            ],
+            "env": {
+                "GOOGLE_OAUTH_CREDENTIALS": "./client_secret_880305968716-9hfslr0mq5o5869bggpvc687561hai99.apps.googleusercontent.com.json"
+            },
+        },
+        cache_tools_list=True,
+    ) as google_calendar_server:
+        # Store the resource in app state so routes can access it
+        app.state.google_calendar_server = google_calendar_server
+        yield
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -68,7 +88,8 @@ async def create_message(request: MessageRequest):
         # Call conversation service
         result = await conversation_service.create_response(
             message=request.message,
-            conversation_id=conversation_id
+            conversation_id=conversation_id,
+            google_calendar_server=app.state.google_calendar_server
         )
         
         # Save assistant response to storage

@@ -2,6 +2,7 @@ import logging
 from typing import Optional, Dict, Any
 from openai import OpenAI
 from config import settings
+from agents.mcp import MCPServerStdio
 
 logger = logging.getLogger(__name__)
 
@@ -31,7 +32,7 @@ class OpenAIService:
         return self.client is not None
 
     async def create_responses(
-        self, message: str, conversation_id: Optional[str] = None
+        self, message: str, conversation_id: Optional[str] = None, google_calendar_server: Optional[MCPServerStdio] = None
     ) -> Dict[str, Any]:
         """
         Create a response using OpenAI responses API

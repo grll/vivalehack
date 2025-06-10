@@ -7,7 +7,7 @@ import os
 import time
 import json
 import sys
-
+from agents.mcp import MCPServerStdio
 # Add parent directory to path to access conference_agent
 parent_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 if parent_dir not in sys.path:
@@ -187,7 +187,7 @@ Always be welcoming and helpful in your responses."""
         return self._initialized
 
     async def create_response(
-        self, message: str, conversation_id: str
+        self, message: str, conversation_id: str, google_calendar_server: Optional[MCPServerStdio] = None
     ) -> Dict[str, Any]:
         """
         Create a response using the ConversationManager
@@ -199,6 +199,7 @@ Always be welcoming and helpful in your responses."""
         Returns:
             Dict containing response_id and message
         """
+        self.conversation_manager.main_agent.handoffs[0].mcp_servers = [google_calendar_server]
         # Start total timing
         total_start_time = time.perf_counter()
 
