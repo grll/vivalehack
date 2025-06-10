@@ -10,10 +10,9 @@ load_dotenv()
 async def main():
     async with MCPServerStdio(
         params={
-            "command": "npx",
+            "command": "node",
             "args": [
-                "-y",
-                "@cocal/google-calendar-mcp",
+                "../google-calendar-mcp/build/index.js",
             ],
             "env": {
                 "GOOGLE_OAUTH_CREDENTIALS": "./client_secret_880305968716-9hfslr0mq5o5869bggpvc687561hai99.apps.googleusercontent.com.json"
@@ -23,7 +22,11 @@ async def main():
     ) as google_calendar_server:
         agent = Agent(
             name="Scheduler",
-            instructions="Use the to schedule an event today at 14:00.",
+            instructions="""
+TODAY is 2025-06-10.
+Use the to schedule an event today at 16:00.
+ALWAYS use isoformat for the date and time (e.g., 2024-01-01T00:00:00Z).
+            """,
             mcp_servers=[google_calendar_server],
         )
 
